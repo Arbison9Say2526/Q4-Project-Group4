@@ -75,7 +75,7 @@ function LogUser() {
         
         alert("Welcome, " + username + "!");
         attempt_counter = 0;
-        window.location.href = 'dashboard.html';   
+        window.location.href = 'ahomepage.html';   
         
     } else {
         attempt_counter++;
