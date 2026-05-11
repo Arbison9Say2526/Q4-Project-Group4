@@ -63,9 +63,9 @@
 let attempt_counter = 0;
 
 
-function LogUser() {
-    
-    // 1. Get references to the elements
+function LogUser() { 
+    event.preventDefault(); // This stops the page from refreshing!
+
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     let display = document.getElementById("display");
@@ -75,7 +75,7 @@ function LogUser() {
         
         alert("Welcome, " + username + "!");
         attempt_counter = 0;
-        window.location.href = 'dashboard.html';   // Change this if your homepage name is different
+        window.location.href = 'dashboard.html';   
         
     } else {
         attempt_counter++;
