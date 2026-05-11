@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage</title>
+    <link href="styles.css" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <style>
+    
+            /* Good day ma'am. I have used AI to help me synthesize
+             my ideas because I still lack the skills to fluently 
+             translate my ideas into code. Thx */
+        .sidebar {
+            width: 250px;
+            background-color: #1a1d20; 
+            padding-top: 20px;
+        }
+
+
+        .sidebar img {
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 10px;
+        }
+
+
+        .nav-link {
+            color: #adb5bd !important;
+            padding: 12px 20px !important;
+            margin: 5px 15px;
+            border-radius: 10px;
+            transition: all 0.3s; 
+            font-weight: 500;
+        }
+
+
+        .nav-link:hover {
+            background-color: #343a40;
+            color: white !important;
+            transform: translateX(5px)
+        }
+
+
+        .nav-link.active {
+            background-color: #0d6efd;
+            color: white !important;
+        }
+        
+        .announcement-float {
+            width: 280px;
+            position: fixed;
+            right: 30px;   
+            top: 30px;      
+            bottom: 30px;     
+            border-radius: 20px; 
+            z-index: 1000;
+            overflow-y: auto;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3); 
+        }
+            
+        .event-row {
+            background-color: #343a40; 
+            display: flex;            
+            align-items: center;   
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;        
+                }
+
+
+        .date-box {
+            background-color: white;
+            color: black;
+            width: 55px;
+            height: 55px;
+            border-radius: 8px;     
+            text-align: center;        
+            font-weight: bold;
+            padding-top: 5px;
+        }
+        .main-content {
+            margin-left: 250px;
+            margin-right: 250px;
+            width: 100%;
+        }
+        .post-card {
+            background-color: #343a40; 
+            border-radius: 15px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #0d6efd;
+        }
+
+        .post-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 2px;
+            color: white;
+        }
+
+        .post-date {
+            font-size: 0.75rem;
+            color: #adb5bd;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .post-content {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #e9ecef;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex align-items-stretch">
+        
+        <nav class="bg-dark text-white p-3 vh-100 position-fixed start-0 sidebar;">
+            <h1 class="h4">Homepage</h1>
+             <img src="student portal logo.png"
+             style="width: 100px; height: auto;"
+             alt-="OBMC">
+
+            <ul class="nav flex-column">
+                
+                 <li>
+                    <a href="#" class="nav-link text-white" onclick="reload()">Home</a>
+                </li>
+                <li>
+                    <a href="bnotebook.html" class="nav-link text-white">Virtual Notebook</a>
+                </li>
+                <li>
+                    <a href="ctasks.html" class="nav-link text-white">Tasks</a>
+                </li>
+                <li>
+                    <a href="dprofile.html" class="nav-link text-white">Profile</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">Log Out</a>
+                </li>
+                    
+            </ul>
+            </nav>
+
+        <div class="main-content p-5">
+            <h1>Welcome, student!</h1>
+          
+            <h1 class="h4 mt-4 mb-3">Latest Posts</h1>
+
+        <div class="post-card">
+            <span class="post-title">Quarterly Exam Reminders</span>
+            <span class="post-date">Posted on May 10, 2026</span>
+            <div class="post-content">
+            <img src="PIc.png" style="width: 500px; display: block; margin: 0 auto;" alt="dates to remember">
+
+
+            </div>
+        </div>
+
+        <div class="post-card" style="border-left-color: #6a067b;">
+            <span class="post-title">Student Media</span>
+            <span class="post-date">May 11, 2026</span>
+            <div class="post-content">
+                The rumored couple, LJ and Matteo were spotted having dinner last Saturday, May 8!
+            </div>
+        </div>
+
+        <div class="post-card" style="border-left-color: #ffc107;"> <span class="post-title">⚠️ System Maintenance</span>
+            <span class="post-date">May 11, 2026</span>
+            <div class="post-content">
+                The Virtual Notebook will be offline from 10 PM to 12 AM for updates. (maam dont believe ts)
+            </div>
+        </div>
+                </div>
+
+        <nav class="bg-dark text-white p-4 position-fixed end-0 announcement-float">
+            <h1 class="h4 mb-3">Calendar</h1>
+            
+            <div class="event-row">
+                <div class="date-box">
+                    11<br><span style="font-size: 10px;">MAY</span>
+                </div>
+                <span class="ms-3 small">4th Quarterly Exams</span>
+            </div>
+
+            <div class="event-row">
+                <div class="date-box">
+                    15<br><span style="font-size: 10px;">MAY</span>
+                </div>
+                <span class="ms-3 small">Last Day of Classes</span>
+            </div>
+
+            <div class="event-row">
+                <div class="date-box">
+                    27<br><span style="font-size: 10px;">JUL</span>
+                </div>
+                <span class="ms-3 small">Start of Classes</span>
+            </div>
+
+            <h1 class="h4 mt-4 mb-3">Assessments</h1>
+            <div class="p-2 opacity-75">
+                <p class="small text-secondary">You have no assessments.</p>
+            </div>
+        </nav>
+
+</body>
+</html>
