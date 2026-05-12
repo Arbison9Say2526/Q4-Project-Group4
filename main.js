@@ -18,7 +18,7 @@ function LogUser() {
    if (username === "KPasco" && password === "9Sapphire") {
        alert(granted);
        attempt_counter = 0;
-       window.location.href = 'pages/ahomepage.html';
+       window.location.href = "ahomepage.html";
    } else {
        attempt_counter++;
       
