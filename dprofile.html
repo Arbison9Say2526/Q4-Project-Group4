@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Homepage</title>
+    <link href="styles.css" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <style>
+        body { background-color: #212529; color: white; }
+        
+        .sidebar {
+            width: 250px;
+            background-color: #1a1d20;
+            padding-top: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+
+        .nav-link {
+            color: #adb5bd !important;
+            padding: 12px 20px !important;
+            margin: 5px 15px;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background-color: #0d6efd;
+            color: white !important;
+        }
+
+        .main-content {
+            margin-left: 250px;
+            padding: 40px;
+            width: calc(100% - 250px);
+        }
+
+        /* Profile Specific Styling */
+        .profile-card {
+            background-color: #343a40;
+            border-radius: 20px;
+            padding: 30px;
+            border-left: 8px solid #0d6efd;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #0d6efd;
+            margin-bottom: 20px;
+        }
+
+        .info-label {
+            color: #adb5bd;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info-value {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .badge-custom {
+            background-color: #0d6efd;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="d-flex align-items-stretch">
+        
+        <nav class="bg-dark text-white p-3 vh-100 position-fixed start-0 sidebar;">
+            <h1 class="h4">Homepage</h1>
+             <img src="student portal logo.png"
+             style="width: 100px; height: auto;"
+             alt-="OBMC">
+
+            <ul class="nav flex-column">
+                
+                 <li>
+                    <a href="ahomepage.html" class="nav-link text-white" onclick="reload()">Home</a>
+                </li>
+                <li>
+                    <a href="notebooks.html" class="nav-link text-white">Virtual Notebook</a>
+                </li>
+                <li>
+                    <a href="ctasks.html" class="nav-link text-white">Tasks</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-white">Profile</a>
+                </li>
+                <li>
+                    <a href="index.html" class="nav-link text-white">Log Out</a>
+                </li>
+                    
+            </ul>
+            </nav>
+
+        <div class="main-content">
+            <div class="container-fluid">
+                <h1 class="mb-4">My Profile</h1>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="profile-card text-center">
+                 <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-pic">
+                            <h3>Kristine Pasco.</h3>
+               <p class="text-primary">Grade 9 - Sapphire</p>
+                            <hr class="bg-secondary">
+                            <button class="btn btn-outline-light btn-sm w-100">Edit Profile</button>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+           <div class="profile-card">
+                   <h4 class="mb-4">Academic Details</h4>
+                            
+                            <div class="row">
+                                <div class="col-6">
+            <p class="info-label">Student ID</p>
+                                    <p class="info-value">101182197</p>
+                                </div>
+                                <div class="col-6">
+                     <p class="info-label">Email Address</p>
+                                    <p class="info-value">kc.pasco@obmontessori.edu.ph</p>
+            </div>
+                                <div class="col-6">
+                   <p class="info-label">Enrollment Status</p>
+                          <p class="info-value"><span class="badge bg-success">Enrolled</span></p>
+                                </div>
+                                <div class="col-6">
+                    <p class="info-label">Adviser</p>
+                              <p class="info-value">Mr. Arbison</p>
+                                </div>
+                            </div>
+
+                            <h4 class="mt-4 mb-3">Skills & Interests</h4>
+                            <div>
+                                <span class="badge badge-custom">Programming</span>
+                <span class="badge badge-custom">Digital Art</span>
+                                <span class="badge badge-custom">Chess</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
